@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    volumes:
+      - ./:/app
+      - ./third_party/oda:/opt/oda:ro
+    environment:
+      ODAFILECONVERTER_PATH: /opt/oda/ODAFileConverter

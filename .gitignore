@@ -1,0 +1,13 @@
+.venv/
+.venv-1/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Local databases
+*.db
+
+# Local env files
+.env
